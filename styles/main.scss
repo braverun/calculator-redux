@@ -1,0 +1,60 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$deep-orange: #ff5722;
+$dark-deep-orange: #e64a19;
+$light-deep-orange:#ffccbc;
+
+$blue-gray: #607d8b;
+$light-blue-gray: #cfd8dc;
+
+$primary-text: #212121;
+$secondary-text: $light-blue-gray;
+
+$secondary-color: $light-blue-gray;
+
+$primary-color: $deep-orange;
+$primary-dark-accent-color: $dark-deep-orange;
+$primary-light-accent-color: $light-deep-orange;
+
+
+body {
+  background-color: $secondary-color;
+}
+
+.calculator-container {
+  @include outer-container(40%);
+  margin-top: 25px;
+  border: solid $primary-dark-accent-color 30px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 8px black;
+  background-color: $primary-dark-accent-color;
+}
+
+.calculator-screen {
+  @include span-columns(12);
+  margin-bottom: 50px;
+  border-radius: 5px;
+  background-color: $primary-light-accent-color;
+  height: 150px;
+  text-align: right;
+  color: $primary-text;
+}
+
+.display {
+  margin-right: 30px;
+  font-size: 130px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  @include span-columns(3);
+  background-color: $primary-color;
+  height: 100px;
+  text-shadow: 1px 1px 2px black;
+  color: $secondary-text;
+  font-size: 50px;
+}
