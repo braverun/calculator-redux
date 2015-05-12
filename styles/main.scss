@@ -78,6 +78,7 @@ button {
 
   @include media ($mobile) {
     height: 50px;
+    text-align: center;
     font-size: 25px;
   }
 
@@ -85,4 +86,10 @@ button {
 
 .function-button {
   background-color: $secondary-color;
+}
+
+.clear-button {
+  @include media ($mobile) {
+    font-size: 18px;
+  }
 }

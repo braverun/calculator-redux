@@ -79,9 +79,14 @@ button {
   @media screen and (max-width: 800px) {
     button {
       height: 50px;
+      text-align: center;
       font-size: 25px; } }
 
 .function-button {
   background-color: #607d8b; }
+
+@media screen and (max-width: 800px) {
+  .clear-button {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=main.css.map */
