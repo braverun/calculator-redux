@@ -9,7 +9,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #cfd8dc; }
+  background-color: #607d8b; }
 
 .calculator-container {
   max-width: 40%;
@@ -24,6 +24,15 @@ body {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 600px) {
+    .calculator-container {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+      .calculator-container::after {
+        clear: both;
+        content: "";
+        display: table; } }
 
 .calculator-screen {
   float: left;
@@ -58,5 +67,8 @@ button {
   font-size: 50px; }
   button:last-child {
     margin-right: 0; }
+
+.function-button {
+  background-color: #607d8b; }
 
 /*# sourceMappingURL=main.css.map */

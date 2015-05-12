@@ -11,12 +11,15 @@ $light-blue-gray: #cfd8dc;
 $primary-text: #212121;
 $secondary-text: $light-blue-gray;
 
-$secondary-color: $light-blue-gray;
+$secondary-color: $blue-gray;
+$secondary-color-light: $light-blue-gray;
 
 $primary-color: $deep-orange;
 $primary-dark-accent-color: $dark-deep-orange;
 $primary-light-accent-color: $light-deep-orange;
 
+
+$mobile: new-breakpoint(max-width 600px);
 
 body {
   background-color: $secondary-color;
@@ -29,6 +32,10 @@ body {
   border-radius: 15px;
   box-shadow: 6px 6px 8px black;
   background-color: $primary-dark-accent-color;
+
+  @include media($mobile) {
+    @include outer-container(80%);
+  }
 }
 
 .calculator-screen {
@@ -57,4 +64,8 @@ button {
   text-shadow: 1px 1px 2px black;
   color: $secondary-text;
   font-size: 50px;
+}
+
+.function-button {
+  background-color: $secondary-color;
 }
