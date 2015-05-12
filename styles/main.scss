@@ -19,7 +19,7 @@ $primary-dark-accent-color: $dark-deep-orange;
 $primary-light-accent-color: $light-deep-orange;
 
 
-$mobile: new-breakpoint(max-width 600px);
+$mobile: new-breakpoint(max-width 800px);
 
 body {
   background-color: $secondary-color;
@@ -34,7 +34,8 @@ body {
   background-color: $primary-dark-accent-color;
 
   @include media($mobile) {
-    @include outer-container(80%);
+    @include outer-container(90%);
+
   }
 }
 
