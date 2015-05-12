@@ -35,7 +35,8 @@ body {
 
   @include media($mobile) {
     @include outer-container(90%);
-
+    border-width: 10px;
+    padding: 40px;
   }
 }
 
@@ -47,11 +48,21 @@ body {
   height: 150px;
   text-align: right;
   color: $primary-text;
+
+  @include media ($mobile) {
+    margin-bottom: 20px;
+    height: 75px;
+  }
 }
 
 .display {
   margin-right: 30px;
   font-size: 130px;
+
+  @include media ($mobile) {
+    margin-right: 15px;
+    font-size: 60px;
+  }
 }
 
 li {
@@ -65,6 +76,12 @@ button {
   text-shadow: 1px 1px 2px black;
   color: $secondary-text;
   font-size: 50px;
+
+  @include media ($mobile) {
+    height: 50px;
+    font-size: 25px;
+  }
+
 }
 
 .function-button {

@@ -28,7 +28,9 @@ body {
     .calculator-container {
       max-width: 90%;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      border-width: 10px;
+      padding: 40px; }
       .calculator-container::after {
         clear: both;
         content: "";
@@ -47,10 +49,18 @@ body {
   color: #212121; }
   .calculator-screen:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    .calculator-screen {
+      margin-bottom: 20px;
+      height: 75px; } }
 
 .display {
   margin-right: 30px;
   font-size: 130px; }
+  @media screen and (max-width: 800px) {
+    .display {
+      margin-right: 15px;
+      font-size: 60px; } }
 
 li {
   list-style: none; }
@@ -67,6 +77,10 @@ button {
   font-size: 50px; }
   button:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 800px) {
+    button {
+      height: 50px;
+      font-size: 25px; } }
 
 .function-button {
   background-color: #607d8b; }
