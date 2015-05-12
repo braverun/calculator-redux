@@ -34,9 +34,8 @@ body {
   background-color: $primary-dark-accent-color;
 
   @include media($mobile) {
-    @include outer-container(90%);
+    @include outer-container(95%);
     border-width: 10px;
-    padding: 40px;
   }
 }
 
